@@ -1,32 +1,37 @@
-//
-//  XPalApp.swift
-//  XPal
-//
-//  Created by Yousif Abuhaija on 4/24/25.
-//
+/*
+**********************************************************
+*   Statement of Compliance with the Stated Honor Code   *
+**********************************************************
+I hereby declare on my honor and I affirm that
+ 
+ (1) I have not given or received any unauthorized help on this assignment, and
+ (2) All work is my own in this assignment.
+ 
+I am hereby writing my name as my signature to declare that the above statements are true:
+   
+      Ravon Kahleik Henson
+ 
+**********************************************************
+ */
 
 import SwiftUI
 import SwiftData
 
 @main
 struct XPalApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    
+    @Environment(\.modelContext) var modelContext
+    
+    init() {
+        //createTripsDatabase()
+    }
+    
+    @AppStorage("darkMode") private var darkMode = false
 
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(sharedModelContainer)
+        
     }
 }
