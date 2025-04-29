@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Trip to Los Angeles",
+        "description": "Flew from Washington DC to Los Angeles to sightsee.  I saw attractions like Santa Monica Pier and Hollywood while I was there",
+        "flights": [
+            {
+                "departureAirport": "Washington Dulles International Airport",
+                "departureCode": "IAD",
+                "arrivalAirport": "Los Angeles International Airport",
+                "arrivalCode": "LAX",
+                "airline": "Delta",
+                "boardingTime": "7:00 PM",
+                "terminal": "C",
+                "date": "August 6, 2023",
+                "latitude": 33.809276,
+                "longitude": -118.155294
+            },
+            {
+                "departureAirport": "Los Angeles International Airport",
+                "departureCode": "LAX",
+                "arrivalAirport": "Washington Dulles International Airport",
+                "arrivalCode": "IAD",
+                "airline": "Delta",
+                "boardingTime": "11:00 AM",
+                "terminal": "3",
+                "date": "August 10, 2023",
+                "latitude": 38.953117,
+                "longitude": -77.456535
+            }
+        ],
+        "location": "Los Angeles, US",
+        "hotels": [
+            {
+                "name": "Shore Hotel",
+                "description": "Just a 6-minute walk from Santa Monica Pier, this California hotel provides each room with a private balcony. Sight-seeing tours are available.",
+                "location": "1515 Ocean Avenue, Santa Monica, Los Angeles, CA",
+                "checkIn": "3:00 PM",
+                "checkOut": "12:00 PM",
+                "latitude": 34.012639,
+                "longitude": -118.495847
+            }
+        ],
+    }
+]
