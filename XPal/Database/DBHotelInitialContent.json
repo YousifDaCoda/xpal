@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Hotel Washington",
+        "description": "The Hotel Washington opened on April 4, 1918. Designed by the architectural firm of Carrère and Hastings, the ten-story, Beaux-Arts hotel is the only commercial building designed by the firm in Washington, D.C. The facade features cream colored sgraffito decoration on a reddish-brown ground.",
+        "location": "515 15th St NW, Washington, DC",
+        "checkIn": "4:00 PM",
+        "checkOut": "11:00 AM",
+        "latitude": 38.896961,
+        "longitude": -77.033386
+    }
+]
