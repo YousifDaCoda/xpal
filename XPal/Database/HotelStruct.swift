@@ -15,7 +15,7 @@ struct HotelStruct: Decodable{
     var location: String
     var checkIn: String
     var checkOut: String
-    var latitutde: String
-    var longitude: String
+    var latitude: Double
+    var longitude: Double
 }
 
