@@ -30,11 +30,11 @@ final class Trip {
     
     var name: String
     var tripDescription: String
-    var flights: [FlightInfoStruct]
+    var flights: [FlightInfo]
     var locations: [String]
-    var hotels: [HotelStruct]
+    var hotels: [Hotel]
     
-    init(name: String, tripDescription: String, flights: [FlightInfoStruct], locations: [String], hotels: [HotelStruct]) {
+    init(name: String, tripDescription: String, flights: [FlightInfo], locations: [String], hotels: [Hotel]) {
         
         self.name = name
         self.tripDescription = tripDescription
@@ -53,18 +53,18 @@ final class FlightInfo{
     var airline: String
     var boardingTime: String
     var terminal: String
-    var time: String
+    var date: String
     var latitude: Double
     var longitude: Double
     
-    init(departureAirport: String, arrivalAirport: String, airline: String, boardingTime: String, terminal: String, time: String, latitude: Double, longitude: Double) {
+    init(departureAirport: String, arrivalAirport: String, airline: String, boardingTime: String, terminal: String, date: String, latitude: Double, longitude: Double) {
         
         self.departureAirport = departureAirport
         self.arrivalAirport = arrivalAirport
         self.airline = airline
         self.boardingTime = boardingTime
         self.terminal = terminal
-        self.time = time
+        self.date = date
         self.latitude = latitude
         self.longitude = longitude
     }
@@ -78,17 +78,17 @@ final class Hotel{
     var location: String
     var checkIn: String
     var checkOut: String
-    var latitutde: String
-    var longitude: String
+    var latitude: Double
+    var longitude: Double
     
-    init(name: String, hotelDescription: String, location: String, checkIn: String, checkOut: String, latitutde: String, longitude: String) {
+    init(name: String, hotelDescription: String, location: String, checkIn: String, checkOut: String, latitude: Double, longitude: Double) {
         
         self.name = name
         self.hotelDescription = hotelDescription
         self.location = location
         self.checkIn = checkIn
         self.checkOut = checkOut
-        self.latitutde = latitutde
+        self.latitude = latitude
         self.longitude = longitude
     }
 }
