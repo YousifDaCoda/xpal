@@ -12,17 +12,21 @@ var alertTitle = ""
 var alertMessage = ""
 
 //------------------------
-// My YouTube Data API Key
+// My Google Translate API Key
 //------------------------
 
-let myApiKey = "ADD_KEY_HERE"
+let myGoogleTranslateApiKey = "AIzaSyCNddUImoNiIkoklwirN29u972x3YG6jAU"
 
 
 //------------------------------
-// YouTube Data API HTTP Headers
+// Google Translate API HTTP Headers
 //------------------------------
-let youTubeDataApiHeaders = [
-    "ADD HEADERS HERE"
+let googleTranslateApiHeaders = [
+    "accept": "application/json",  // Indicating that the response will be in JSON format
+    "cache-control": "no-cache",   // Prevents caching of the response
+    "connection": "keep-alive",    // Keeps the connection alive for multiple requests
+    "host": "translation.googleapis.com",  // Host URL for Google Translate API
+    "Content-Type": "application/json"  // Ensures data is sent and received in JSON format
 ]
 
 var englishHighScore = ["english" : "0.0"]

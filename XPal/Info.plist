@@ -10,6 +10,8 @@
 	<string>Speech Recognition is used to convert your speech into text</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Microphone is used to record your voice to create voice notes and to record your speech so that it can be converted to text.</string>
+	<key></key>
+	<string></string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>

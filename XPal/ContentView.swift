@@ -26,7 +26,7 @@ struct ContentView: View {
             }
             
             Tab("Translate", systemImage: "mappin.and.ellipse") {
-                EmptyView()
+                Translate()
             }
             
             Tab("Languages", systemImage: "magnifyingglass") {
