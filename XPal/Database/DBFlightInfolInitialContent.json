@@ -1,0 +1,12 @@
+[
+    {
+        "departureAirport": "John F. Kennedy International Airport"
+        "arrivalAirport": "London Heathrow Airport"
+        "airline": "British Airways"
+        "boardingTime": "7:00 PM"
+        "terminal": "4"
+        "date": "March 6, 2024"
+        "latitude": 51.472099
+        "longitude": -0.452730
+    }
+]
