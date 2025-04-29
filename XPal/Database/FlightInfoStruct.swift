@@ -15,7 +15,7 @@ struct FlightInfoStruct: Decodable{
     var airline: String
     var boardingTime: String
     var terminal: String
-    var time: String
+    var date: String
     var latitude: Double
     var longitude: Double
 }
