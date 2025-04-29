@@ -116,14 +116,14 @@ public func createDatabase() {
                              location: aHotel.location,
                              checkIn: aHotel.checkIn,
                              checkOut: aHotel.checkOut,
-                             latitutde: aHotel.latitutde,
-                             longitude: aHotel.location)
+                             latitude: aHotel.latitude,
+                             longitude: aHotel.longitude)
         modelContext.insert(newHotel)
         
     }
     
     var flightInfoStructList = [FlightInfoStruct]()
-    flightInfoStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBHotelInitialContent.json", fileLocation: "Main Bundle")
+    flightInfoStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBFlightInfolInitialContent.json", fileLocation: "Main Bundle")
     
     for aFlight in flightInfoStructList {
         
@@ -132,7 +132,7 @@ public func createDatabase() {
                                    airline: aFlight.airline,
                                    boardingTime: aFlight.boardingTime,
                                    terminal: aFlight.terminal,
-                                   time: aFlight.time,
+                                   date: aFlight.date,
                                    latitude: aFlight.latitude,
                                    longitude: aFlight.longitude)
         modelContext.insert(newFlight)
@@ -140,15 +140,40 @@ public func createDatabase() {
     }
     
     var tripStructList = [TripStruct]()
-    tripStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBHotelInitialContent.json", fileLocation: "Main Bundle")
+    tripStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBTripInitialContent.json", fileLocation: "Main Bundle")
     
     for aTrip in tripStructList {
         
         let newTrip = Trip(name: aTrip.name,
                            tripDescription: aTrip.description,
-                           flights: aTrip.flights,
+                           flights: [FlightInfo](),
                            locations: aTrip.locations,
-                           hotels: aTrip.hotels)
+                           hotels: [Hotel]())
+        for aFlight in aTrip.flights {
+            
+            let newFlight = FlightInfo(departureAirport: aFlight.departureAirport,
+                                       arrivalAirport: aFlight.arrivalAirport,
+                                       airline: aFlight.airline,
+                                       boardingTime: aFlight.boardingTime,
+                                       terminal: aFlight.terminal,
+                                       date: aFlight.date,
+                                       latitude: aFlight.latitude,
+                                       longitude: aFlight.longitude)
+            modelContext.insert(newFlight)
+            newTrip.flights.append(newFlight)
+        }
+        for aHotel in aTrip.hotels {
+            
+            let newHotel = Hotel(name: aHotel.name,
+                                 hotelDescription: aHotel.description,
+                                 location: aHotel.location,
+                                 checkIn: aHotel.checkIn,
+                                 checkOut: aHotel.checkOut,
+                                 latitude: aHotel.latitude,
+                                 longitude: aHotel.longitude)
+            modelContext.insert(newHotel)
+            newTrip.hotels.append(newHotel)
+        }
         modelContext.insert(newTrip)
         
     }
