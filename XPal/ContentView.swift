@@ -22,7 +22,7 @@ struct ContentView: View {
             }
             
             Tab("Trips", systemImage: "list.bullet") {
-                EmptyView()
+                TripsList()
             }
             
             Tab("Translate", systemImage: "mappin.and.ellipse") {
@@ -30,7 +30,7 @@ struct ContentView: View {
             }
             
             Tab("Languages", systemImage: "magnifyingglass") {
-                EmptyView()
+                LanguagesList()
             }
             
             Tab("Search API", systemImage: "cloud.sun.rain") {

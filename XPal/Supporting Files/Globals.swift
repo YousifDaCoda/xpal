@@ -24,3 +24,12 @@ let myApiKey = "ADD_KEY_HERE"
 let youTubeDataApiHeaders = [
     "ADD HEADERS HERE"
 ]
+
+var englishHighScore = ["english" : "0.0"]
+var arabicHighScore = ["arabic" : "0.0"]
+var frenchHighScore = ["french" : "0.0"]
+var russianHighScore = ["russian" : "0.0"]
+var chineseHighScore = ["chinese" : "0.0"]
+var spanishHighScore = ["spanish" : "0.0"]
+
+

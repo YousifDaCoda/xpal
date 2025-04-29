@@ -23,7 +23,7 @@ struct XPalApp: App {
     @Environment(\.modelContext) var modelContext
     
     init() {
-        //createTripsDatabase()
+        createDatabase()
     }
     
     @AppStorage("darkMode") private var darkMode = false
@@ -31,6 +31,16 @@ struct XPalApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // Change the color mode of the entire app to Dark or Light
+                .preferredColorScheme(darkMode ? .dark : .light)
+            
+                /*
+                 Inject the Model Container into the environment so that you can access its Model Context
+                 in a SwiftUI file by using @Environment(\.modelContext) private var modelContext
+                 */
+                .modelContainer(
+                                for: [Language.self, Trip.self, FlightInfo.self, Hotel.self], isUndoEnabled: true)
+        
         }
         
     }
