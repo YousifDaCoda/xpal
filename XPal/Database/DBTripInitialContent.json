@@ -1,44 +1,208 @@
 [
-    {
-        "name": "Trip to Los Angeles",
-        "description": "Flew from Washington DC to Los Angeles to sightsee.  I saw attractions like Santa Monica Pier and Hollywood while I was there",
-        "flights": [
-            {
-                "departureAirport": "Washington Dulles International Airport",
-                "departureCode": "IAD",
-                "arrivalAirport": "Los Angeles International Airport",
-                "arrivalCode": "LAX",
-                "airline": "Delta",
-                "boardingTime": "7:00 PM",
-                "terminal": "C",
-                "date": "August 6, 2023",
-                "latitude": 33.809276,
-                "longitude": -118.155294
-            },
-            {
-                "departureAirport": "Los Angeles International Airport",
-                "departureCode": "LAX",
-                "arrivalAirport": "Washington Dulles International Airport",
-                "arrivalCode": "IAD",
-                "airline": "Delta",
-                "boardingTime": "11:00 AM",
-                "terminal": "3",
-                "date": "August 10, 2023",
-                "latitude": 38.953117,
-                "longitude": -77.456535
-            }
-        ],
-        "location": "Los Angeles, US",
-        "hotels": [
-            {
-                "name": "Shore Hotel",
-                "description": "Just a 6-minute walk from Santa Monica Pier, this California hotel provides each room with a private balcony. Sight-seeing tours are available.",
-                "location": "1515 Ocean Avenue, Santa Monica, Los Angeles, CA",
-                "checkIn": "3:00 PM",
-                "checkOut": "12:00 PM",
-                "latitude": 34.012639,
-                "longitude": -118.495847
-            }
-        ],
-    }
+  {
+    "name": "Trip to Los Angeles",
+    "description": "Flew from Washington DC to Los Angeles to sightsee.  I saw attractions like Santa Monica Pier and Hollywood while I was there",
+    "flights": [
+      {
+        "departureAirport": "Washington Dulles International Airport",
+        "departureCode": "IAD",
+        "arrivalAirport": "Los Angeles International Airport",
+        "arrivalCode": "LAX",
+        "airline": "Delta",
+        "boardingTime": "7:00 PM",
+        "terminal": "C",
+        "date": "August 6, 2023",
+        "latitude": 33.809276,
+        "longitude": -118.155294
+      },
+      {
+        "departureAirport": "Los Angeles International Airport",
+        "departureCode": "LAX",
+        "arrivalAirport": "Washington Dulles International Airport",
+        "arrivalCode": "IAD",
+        "airline": "Delta",
+        "boardingTime": "11:00 AM",
+        "terminal": "3",
+        "date": "August 10, 2023",
+        "latitude": 38.953117,
+        "longitude": -77.456535
+      }
+    ],
+    "location": "Los Angeles, US",
+    "hotels": [
+      {
+        "name": "Shore Hotel",
+        "description": "Just a 6-minute walk from Santa Monica Pier, this California hotel provides each room with a private balcony. Sight-seeing tours are available.",
+        "location": "1515 Ocean Avenue, Santa Monica, Los Angeles, CA",
+        "checkIn": "3:00 PM",
+        "checkOut": "12:00 PM",
+        "latitude": 34.012639,
+        "longitude": -118.495847
+      }
+    ]
+  },
+  {
+    "name": "Road Trip",
+    "description": "Drove from Las Vegas to the Grand Canyon",
+    "flights": [],
+    "location": "Grand Canyon, US",
+    "hotels": [
+      {
+        "name": "Grand Hotel",
+        "description": "The Grand Hotel at the Grand Canyon in Grand Canyon offers a 5-star experience with family rooms, balconies, and modern amenities. Guests enjoy free WiFi throughout the property, air-conditioning, and amenities such as a fitness center, indoor swimming pool, and hot tub.",
+        "location": "149 State Highway 64, Tusayan, AZ",
+        "checkIn": "4:00 PM",
+        "checkOut": "11:00 PM",
+        "latitude": 35.970291,
+        "longitude": -112.127159
+      }
+    ]
+  },
+  {
+    "name": "Trip Around Spain",
+    "description": "Flew to Spain and visited multiple cities while there",
+    "flights": [
+      {
+        "departureAirport": "John F. Kennedy International Airport",
+        "departureCode": "JFK",
+        "arrivalAirport": "London Heathrow Airport",
+        "arrivalCode": "LHR",
+        "airline": "British Airways",
+        "boardingTime": "6:45 PM",
+        "terminal": "8",
+        "date": "March 6, 2023",
+        "latitude": 51.472099,
+        "longitude": -0.45273
+      },
+      {
+        "departureAirport": "London Heathrow Airport",
+        "departureCode": "LHR",
+        "arrivalAirport": "Adolfo Suárez Madrid-Barajas Airport",
+        "arrivalCode": "MAD",
+        "airline": "Ibería Air",
+        "boardingTime": "9:15 AM",
+        "terminal": "5",
+        "date": "March 7, 2023",
+        "latitude": 40.505539,
+        "longitude": -3.60609
+      },
+      {
+        "departureAirport": "Adolfo Suárez Madrid-Barajas Airport",
+        "departureCode": "MAD",
+        "arrivalAirport": "John F. Kennedy International Airport",
+        "arrivalCode": "JFK",
+        "airline": "American Airlines",
+        "boardingTime": "10:45 AM",
+        "terminal": "4",
+        "date": "March 20, 2023",
+        "latitude": 40.647491,
+        "longitude": -73.787827
+      }
+    ],
+    "location": "Madrid, ES",
+    "hotels": [
+      {
+        "name": "Hyatt Centric Gran Via Madrid",
+        "description": "A Very Nice Hotel in Downtown Madrid",
+        "location": "Gran Vía, 31, Centro 28013, Madrid, Spain",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "latitude": 40.41998,
+        "longitude": -3.703769
+      },
+      {
+        "name": "Hilton Barcelona",
+        "description": "Accommodating Hotel in Barcelona close to many sightseeing activites",
+        "location": "Avenida Diagonal 589-591, Barcelona, 08014, Spain",
+        "checkIn": "4:00 PM",
+        "checkOut": "10:00 AM",
+        "latitude": 41.3889,
+        "longitude": 2.131391
+      }
+    ]
+  },
+  {
+    "name": "Business Trip to Tokyo",
+    "description": "Went out to a technology conference in Tokyo where I also got to immerse myself in the culture",
+    "flights": [
+      {
+        "departureAirport": "San Francisco International Airport",
+        "departureCode": "SFO",
+        "arrivalAirport": "Haneda Airport",
+        "arrivalCode": "HND",
+        "airline": "Japan Airlines",
+        "boardingTime": "7:00 PM",
+        "terminal": "C",
+        "date": "October 6, 2017",
+        "latitude": 35.54970280914504,
+        "longitude": 139.78161919069217
+      },
+      {
+        "departureAirport": "Haneda Airport",
+        "departureCode": "HND",
+        "arrivalAirport": "San Francisco International Airport",
+        "arrivalCode": "SFO",
+        "airline": "Japan Airlines",
+        "boardingTime": "9:00 AM",
+        "terminal": "2",
+        "date": "October 10, 2017",
+        "latitude": 37.61940115286753,
+        "longitude": -122.37855682927159
+      }
+    ],
+    "location": "Tokyo, Japan",
+    "hotels": [
+      {
+        "name": "The Yokohama Bay Hotel Tokyu",
+        "description": "Some Really good views and was very close to the water",
+        "location": "2-3-7 Minatomirai, Nishi-ku, Yokohama, Kanagawa-ken, 220-8543",
+        "checkIn": "2:00 PM",
+        "checkOut": "1:00 PM",
+        "latitude": 35.45704623485109,
+        "longitude": 139.6359160150665
+      }
+    ]
+  },
+  {
+    "name": "Texas BBQ Adventure",
+    "description": "Flew down from Canada to try the world renowned Texas BBQ",
+    "flights": [
+      {
+        "departureAirport": "Toronto Pearson International Airport",
+        "departureCode": "YYZ",
+        "arrivalAirport": "Austin-Bergstrom International Airport",
+        "arrivalCode": "AUS",
+        "airline": "Delta",
+        "boardingTime": "2:00 PM",
+        "terminal": "C",
+        "date": "June 23, 2021",
+        "latitude": 30.194478960287444,
+        "longitude": -97.66817731345193
+      },
+      {
+        "departureAirport": "Austin-Bergstrom International Airport",
+        "departureCode": "AUS",
+        "arrivalAirport": "Toronto Pearson International Airport",
+        "arrivalCode": "YYZ",
+        "airline": "Delta",
+        "boardingTime": "11:30 AM",
+        "terminal": "Barbera Jordan",
+        "date": "June 26, 2021",
+        "latitude": 43.6804356684646,
+        "longitude": -79.62572114073939
+      }
+    ],
+    "location": "Austin, Texas",
+    "hotels": [
+      {
+        "name": "The Stephen F. Austin Royal Sonesta",
+        "description": "Awesome Location in Downtown Austin, had good views of the surrounding city",
+        "location": "701 Congress Avenue, Austin, TX, USA",
+        "checkIn": "3:00 PM",
+        "checkOut": "10:00 PM",
+        "latitude": 30.269119361463755,
+        "longitude": -97.74193753828503
+      }
+    ]
+  }
 ]
