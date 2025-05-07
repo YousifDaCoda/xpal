@@ -1,38 +1,933 @@
 [
-    {
-        "name": "English",
-        "originCountry": "United Kingdom",
-        "countriesSpoken": 73,
-        "commonPhrases": {"Hello": "Hello", "Bye": "Bye", "Yes": "Yes", "No": "No"}
-    },
-    {
-        "name": "Spanish",
-        "originCountry": "Spain",
-        "countriesSpoken": 27,
-        "commonPhrases": {"Hello": "Hola", "Bye": "Adios", "Yes": "Sí", "No": "No"}
-    },
-    {
-        "name": "Russian",
-        "originCountry": "Russia",
-        "countriesSpoken": 13,
-        "commonPhrases": {"Hello": "Привет", "Bye": "Прощание", "Yes": "Да", "No": "Нет"}
-    },
-    {
-        "name": "Chinese (Mandarin)",
-        "originCountry": "China",
-        "countriesSpoken": 3,
-        "commonPhrases": {"Hello": "你好", "Bye": "再見", "Yes": "是的", "No": "不"}
-    },
-    {
-        "name": "French",
-        "originCountry": "France",
-        "countriesSpoken": 26,
-        "commonPhrases": {"Hello": "Bonjour", "Bye": "Adieu", "Yes": "Oui", "No": "Non"}
-    },
-    {
-        "name": "Arabic",
-        "originCountry": "Saudi Arabia",
-        "countriesSpoken": 34,
-        "commonPhrases": {"Hello": "مرحبا", "Bye": "وداعا", "Yes": "نعم", "No": "لا"}
-    }
+  {
+    "name": "English",
+    "originCountry": "United Kingdom",
+    "countriesSpoken": 73,
+    "numberOfSpeakers": 1456448320,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "Hello"
+          },
+          {
+            "english": "Good morning",
+            "translation": "Good morning"
+          },
+          {
+            "english": "Good night",
+            "translation": "Good night"
+          },
+          {
+            "english": "How are you?",
+            "translation": "How are you?"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "Nice to meet you"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "Please"
+          },
+          {
+            "english": "Thank you",
+            "translation": "Thank you"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "You're welcome"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "Excuse me"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "I'm sorry"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "Eat"
+          },
+          {
+            "english": "Drink",
+            "translation": "Drink"
+          },
+          {
+            "english": "Go",
+            "translation": "Go"
+          },
+          {
+            "english": "Speak",
+            "translation": "Speak"
+          },
+          {
+            "english": "See",
+            "translation": "See"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "Bathroom"
+          },
+          {
+            "english": "Hospital",
+            "translation": "Hospital"
+          },
+          {
+            "english": "School",
+            "translation": "School"
+          },
+          {
+            "english": "Hotel",
+            "translation": "Hotel"
+          },
+          {
+            "english": "Airport",
+            "translation": "Airport"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "Help!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "Call the police"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "I need a doctor"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "I'm lost"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "Where is the pharmacy?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Spanish",
+    "originCountry": "Spain",
+    "countriesSpoken": 27,
+    "numberOfSpeakers": 559078890,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "Hola"
+          },
+          {
+            "english": "Good morning",
+            "translation": "Buenos días"
+          },
+          {
+            "english": "Good night",
+            "translation": "Buenas noches"
+          },
+          {
+            "english": "How are you?",
+            "translation": "¿Cómo estás?"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "Mucho gusto"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "Por favor"
+          },
+          {
+            "english": "Thank you",
+            "translation": "Gracias"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "De nada"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "Perdón"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "Lo siento"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "Comer"
+          },
+          {
+            "english": "Drink",
+            "translation": "Beber"
+          },
+          {
+            "english": "Go",
+            "translation": "Ir"
+          },
+          {
+            "english": "Speak",
+            "translation": "Hablar"
+          },
+          {
+            "english": "See",
+            "translation": "Ver"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "Baño"
+          },
+          {
+            "english": "Hospital",
+            "translation": "Hospital"
+          },
+          {
+            "english": "School",
+            "translation": "Escuela"
+          },
+          {
+            "english": "Hotel",
+            "translation": "Hotel"
+          },
+          {
+            "english": "Airport",
+            "translation": "Aeropuerto"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "¡Ayuda!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "Llama a la policía"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "Necesito un médico"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "Estoy perdido"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "¿Dónde está la farmacia?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Russian",
+    "originCountry": "Russia",
+    "countriesSpoken": 13,
+    "numberOfSpeakers": 254997130,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "Здравствуйте"
+          },
+          {
+            "english": "Good morning",
+            "translation": "Доброе утро"
+          },
+          {
+            "english": "Good night",
+            "translation": "Спокойной ночи"
+          },
+          {
+            "english": "How are you?",
+            "translation": "Как дела?"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "Приятно познакомиться"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "Пожалуйста"
+          },
+          {
+            "english": "Thank you",
+            "translation": "Спасибо"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "Пожалуйста"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "Извините"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "Простите"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "Есть"
+          },
+          {
+            "english": "Drink",
+            "translation": "Пить"
+          },
+          {
+            "english": "Go",
+            "translation": "Идти"
+          },
+          {
+            "english": "Speak",
+            "translation": "Говорить"
+          },
+          {
+            "english": "See",
+            "translation": "Видеть"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "Ванная"
+          },
+          {
+            "english": "Hospital",
+            "translation": "Больница"
+          },
+          {
+            "english": "School",
+            "translation": "Школа"
+          },
+          {
+            "english": "Hotel",
+            "translation": "Гостиница"
+          },
+          {
+            "english": "Airport",
+            "translation": "Аэропорт"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "Помогите!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "Вызовите полицию"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "Мне нужен врач"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "Я потерялся"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "Где аптека?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chinese (Mandarin)",
+    "originCountry": "China",
+    "countriesSpoken": 3,
+    "numberOfSpeakers": 1138222350,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "你好"
+          },
+          {
+            "english": "Good morning",
+            "translation": "早上好"
+          },
+          {
+            "english": "Good night",
+            "translation": "晚安"
+          },
+          {
+            "english": "How are you?",
+            "translation": "你好吗？"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "很高兴认识你"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "请"
+          },
+          {
+            "english": "Thank you",
+            "translation": "谢谢"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "不客气"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "对不起"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "对不起"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "吃"
+          },
+          {
+            "english": "Drink",
+            "translation": "喝"
+          },
+          {
+            "english": "Go",
+            "translation": "去"
+          },
+          {
+            "english": "Speak",
+            "translation": "说"
+          },
+          {
+            "english": "See",
+            "translation": "看"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "洗手间"
+          },
+          {
+            "english": "Hospital",
+            "translation": "医院"
+          },
+          {
+            "english": "School",
+            "translation": "学校"
+          },
+          {
+            "english": "Hotel",
+            "translation": "酒店"
+          },
+          {
+            "english": "Airport",
+            "translation": "机场"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "救命！"
+          },
+          {
+            "english": "Call the police",
+            "translation": "报警"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "我需要医生"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "我迷路了"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "药店在哪里？"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "French",
+    "originCountry": "France",
+    "countriesSpoken": 26,
+    "numberOfSpeakers": 309804220,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "Bonjour"
+          },
+          {
+            "english": "Good morning",
+            "translation": "Bonjour"
+          },
+          {
+            "english": "Good night",
+            "translation": "Bonne nuit"
+          },
+          {
+            "english": "How are you?",
+            "translation": "Comment ça va?"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "Enchanté"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "S'il vous plaît"
+          },
+          {
+            "english": "Thank you",
+            "translation": "Merci"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "De rien"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "Excusez-moi"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "Je suis désolé"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "Manger"
+          },
+          {
+            "english": "Drink",
+            "translation": "Boire"
+          },
+          {
+            "english": "Go",
+            "translation": "Aller"
+          },
+          {
+            "english": "Speak",
+            "translation": "Parler"
+          },
+          {
+            "english": "See",
+            "translation": "Voir"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "Salle de bain"
+          },
+          {
+            "english": "Hospital",
+            "translation": "Hôpital"
+          },
+          {
+            "english": "School",
+            "translation": "École"
+          },
+          {
+            "english": "Hotel",
+            "translation": "Hôtel"
+          },
+          {
+            "english": "Airport",
+            "translation": "Aéroport"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "À l'aide!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "Appelez la police"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "J'ai besoin d'un médecin"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "Je suis perdu"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "Où est la pharmacie?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Arabic",
+    "originCountry": "Saudi Arabia",
+    "countriesSpoken": 34,
+    "numberOfSpeakers": 273989700,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "مرحبا"
+          },
+          {
+            "english": "Good morning",
+            "translation": "صباح الخير"
+          },
+          {
+            "english": "Good night",
+            "translation": "تصبح على خير"
+          },
+          {
+            "english": "How are you?",
+            "translation": "كيف حالك؟"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "تشرفت بلقائك"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "من فضلك"
+          },
+          {
+            "english": "Thank you",
+            "translation": "شكرا"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "على الرحب والسعة"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "عفوا"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "أنا آسف"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "يأكل"
+          },
+          {
+            "english": "Drink",
+            "translation": "يشرب"
+          },
+          {
+            "english": "Go",
+            "translation": "يذهب"
+          },
+          {
+            "english": "Speak",
+            "translation": "يتحدث"
+          },
+          {
+            "english": "See",
+            "translation": "يرى"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "حمام"
+          },
+          {
+            "english": "Hospital",
+            "translation": "مستشفى"
+          },
+          {
+            "english": "School",
+            "translation": "مدرسة"
+          },
+          {
+            "english": "Hotel",
+            "translation": "فندق"
+          },
+          {
+            "english": "Airport",
+            "translation": "مطار"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "النجدة!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "اتصل بالشرطة"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "أحتاج إلى طبيب"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "أنا ضائع"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "أين الصيدلية؟"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Turkish",
+    "originCountry": "Turkey",
+    "countriesSpoken": 1,
+    "numberOfSpeakers": 90028000,
+    "categories": [
+      {
+        "categoryName": "Greetings",
+        "phrases": [
+          {
+            "english": "Hello",
+            "translation": "Merhaba"
+          },
+          {
+            "english": "Good morning",
+            "translation": "Günaydın"
+          },
+          {
+            "english": "Good night",
+            "translation": "İyi geceler"
+          },
+          {
+            "english": "How are you?",
+            "translation": "Nasılsın?"
+          },
+          {
+            "english": "Nice to meet you",
+            "translation": "Tanıştığımıza memnun oldum"
+          }
+        ]
+      },
+      {
+        "categoryName": "Politeness",
+        "phrases": [
+          {
+            "english": "Please",
+            "translation": "Lütfen"
+          },
+          {
+            "english": "Thank you",
+            "translation": "Teşekkür ederim"
+          },
+          {
+            "english": "You're welcome",
+            "translation": "Rica ederim"
+          },
+          {
+            "english": "Excuse me",
+            "translation": "Affedersiniz"
+          },
+          {
+            "english": "I'm sorry",
+            "translation": "Üzgünüm"
+          }
+        ]
+      },
+      {
+        "categoryName": "Verbs",
+        "phrases": [
+          {
+            "english": "Eat",
+            "translation": "Yemek"
+          },
+          {
+            "english": "Drink",
+            "translation": "İçmek"
+          },
+          {
+            "english": "Go",
+            "translation": "Gitmek"
+          },
+          {
+            "english": "Speak",
+            "translation": "Konuşmak"
+          },
+          {
+            "english": "See",
+            "translation": "Görmek"
+          }
+        ]
+      },
+      {
+        "categoryName": "Locations",
+        "phrases": [
+          {
+            "english": "Bathroom",
+            "translation": "Banyo"
+          },
+          {
+            "english": "Hospital",
+            "translation": "Hastane"
+          },
+          {
+            "english": "School",
+            "translation": "Okul"
+          },
+          {
+            "english": "Hotel",
+            "translation": "Otel"
+          },
+          {
+            "english": "Airport",
+            "translation": "Havalimanı"
+          }
+        ]
+      },
+      {
+        "categoryName": "Emergency",
+        "phrases": [
+          {
+            "english": "Help!",
+            "translation": "Yardım edin!"
+          },
+          {
+            "english": "Call the police",
+            "translation": "Polisi arayın"
+          },
+          {
+            "english": "I need a doctor",
+            "translation": "Bir doktora ihtiyacım var"
+          },
+          {
+            "english": "I'm lost",
+            "translation": "Kayboldum"
+          },
+          {
+            "english": "Where is the pharmacy?",
+            "translation": "Eczane nerede?"
+          }
+        ]
+      }
+    ]
+  }
 ]

@@ -12,4 +12,6 @@ struct Question {
     let answer: String
     let choice1: String
     let choice2: String
+    let choice3: String
+    let choice4: String
 }

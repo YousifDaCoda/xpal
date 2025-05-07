@@ -6,9 +6,21 @@
 //
 
 import SwiftUI
+import Charts
 
 struct LanguageDetails: View {
-    let language: Language
+    @Bindable var language: Language
+
+    var labeledAttempts: [LabeledAttempt] {
+        let all = (language.quizAttempts ?? [])
+            .sorted(by: { $0.date > $1.date })
+            .prefix(7)
+            .reversed()
+
+        return all.enumerated().map { index, attempt in
+            LabeledAttempt(label: "Attempt \(index + 1)", score: attempt.score)
+        }
+    }
     
     var body: some View {
         
@@ -48,6 +60,31 @@ struct LanguageDetails: View {
                             Text("\(language.name) quiz high score")
                                 .foregroundStyle(.blue)
                         }
+                    }
+                }
+                
+                Section(header: Text("Recent Quiz Performance")) {
+                    if labeledAttempts.isEmpty {
+                        Text("No quiz attempts yet.")
+                            .foregroundColor(.secondary)
+                    } else {
+                        Chart(labeledAttempts) { attempt in
+                            BarMark(
+                                x: .value("Attempt", attempt.label),
+                                y: .value("Score", attempt.score)
+                            )
+                            .foregroundStyle(Color.blue)
+                            
+                        }
+                        .chartYAxis {
+                            AxisMarks(position: .leading)
+                        }
+                        .chartXAxis {
+                            AxisMarks(values: labeledAttempts.map { $0.label })
+                        }
+                        .chartYScale(domain: 0...100)
+                        .frame(height: 250)
+
                     }
                 }
                 

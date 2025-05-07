@@ -8,20 +8,68 @@
 
 import SwiftUI
 import SwiftData
+import Foundation
 
 @Model
-final class Language{
-    
+final class Language {
     var name: String
     var originCountry: String
     var countriesSpoken: Int
-    var commonPhrases: [String: String]
+    var numberOfSpeakers: Int
     
-    init(name: String, originCountry: String, countriesSpoken: Int, commonPhrases: [String : String]) {
+    @Relationship(deleteRule: .cascade)
+    var categories: [LanguageCategory]?
+    
+    @Relationship(deleteRule: .cascade)
+    var quizAttempts: [QuizAttempt]?
+    
+    init(name: String, originCountry: String, countriesSpoken: Int, numberOfSpeakers: Int, categories: [LanguageCategory]? = nil, quizAttempts: [QuizAttempt]? = nil) {
         self.name = name
         self.originCountry = originCountry
         self.countriesSpoken = countriesSpoken
-        self.commonPhrases = commonPhrases
+        self.numberOfSpeakers = numberOfSpeakers
+        self.categories = categories
+        self.quizAttempts = quizAttempts
+        
+    }
+}
+
+@Model
+final class LanguageCategory {
+    var categoryName: String
+    
+    @Relationship(deleteRule: .cascade)
+    var phrases: [Phrase]?
+    
+    init(categoryName: String, phrases: [Phrase]? = nil) {
+        self.categoryName = categoryName
+        self.phrases = phrases
+    }
+}
+
+@Model
+final class Phrase {
+    var english: String
+    var translation: String
+
+    init(english: String, translation: String) {
+        self.english = english
+        self.translation = translation
+    }
+}
+
+
+@Model
+final class QuizAttempt {
+    var date: Date
+    var score: Double  
+
+    @Relationship var language: Language
+
+    init(date: Date, score: Double, language: Language) {
+        self.date = date
+        self.score = score
+        self.language = language
     }
 }
 

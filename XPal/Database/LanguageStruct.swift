@@ -8,11 +8,26 @@
 
 import Foundation
 
-struct LanguageStruct: Decodable{
-    
+struct LanguageStruct: Decodable {
     var name: String
     var originCountry: String
     var countriesSpoken: Int
-    var commonPhrases: [String: String]
+    var numberOfSpeakers: Int
+    var categories: [LanguageCategoryStruct]
+    var quizAttempts: [QuizAttemptStruct]?
 }
 
+struct LanguageCategoryStruct: Decodable {
+    var categoryName: String
+    var phrases: [PhraseStruct]
+}
+
+struct PhraseStruct: Decodable {
+    var english: String
+    var translation: String
+}
+
+struct QuizAttemptStruct: Decodable {
+    var date: Date
+    var score: Double
+}

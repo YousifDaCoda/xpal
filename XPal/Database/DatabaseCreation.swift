@@ -19,7 +19,7 @@ public func createDatabase() {
     
     do {
         // Create a database container to manage the Photo and Video objects
-        modelContainer = try ModelContainer(for: Language.self, Trip.self, FlightInfo.self, Hotel.self)
+        modelContainer = try ModelContainer(for: Language.self, Trip.self, FlightInfo.self, Hotel.self, QuizAttempt.self)
     } catch {
         fatalError("Unable to create ModelContainer")
     }
@@ -70,6 +70,8 @@ public func createDatabase() {
     }
     
     if !listOfAllLanguagesInDatabase.isEmpty && !listOfAllHotelsInDatabase.isEmpty && !listOfAllFlightInfosInDatabase.isEmpty && !listOfAllTripsInDatabase.isEmpty{
+        
+        
         print("Database has already been created!")
         return
     }
@@ -93,18 +95,34 @@ public func createDatabase() {
     languageStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBLanguageInitialContent.json", fileLocation: "Main Bundle")
     
     for aLanguage in languageStructList {
-
-
-        // Instantiate a new Photo object and dress it up
-        let newLanguage = Language(name: aLanguage.name,
-                                   originCountry: aLanguage.originCountry,
-                                   countriesSpoken: aLanguage.countriesSpoken,
-                                   commonPhrases: aLanguage.commonPhrases)
         
-        // Insert the new Photo object into the database
+        var categoryModels: [LanguageCategory] = []
+
+        for categoryStruct in aLanguage.categories {
+            let phraseModels = categoryStruct.phrases.map {
+                Phrase(english: $0.english, translation: $0.translation)
+            }
+            let newCategory = LanguageCategory(categoryName: categoryStruct.categoryName, phrases: phraseModels)
+            
+            categoryModels.append(newCategory)
+        }
+
+        let newLanguage = Language(
+            name: aLanguage.name,
+            originCountry: aLanguage.originCountry,
+            countriesSpoken: aLanguage.countriesSpoken,
+            numberOfSpeakers: aLanguage.numberOfSpeakers,
+            categories: categoryModels
+        )
+
+        let attemptModels = (aLanguage.quizAttempts ?? []).map {
+            QuizAttempt(date: $0.date, score: $0.score, language: newLanguage)
+        }
+
         modelContext.insert(newLanguage)
-        
-    }   // End of the for loop
+        attemptModels.forEach { modelContext.insert($0) }
+    } // End of the for loop
+  
     
     var hotelStructList = [HotelStruct]()
     hotelStructList = decodeJsonFileIntoArrayOfStructs(fullFilename: "DBHotelInitialContent.json", fileLocation: "Main Bundle")

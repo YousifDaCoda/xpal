@@ -17,27 +17,18 @@ struct QuestionView: View {
                 .font(.title2)
                 .multilineTextAlignment(.center)
                 .padding()
-            
-            Button(action: {
-                answerSelected(question.choice1)
-            }) {
-                Text(question.choice1)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            
-            Button(action: {
-                answerSelected(question.choice2)
-            }) {
-                Text(question.choice2)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+
+            ForEach([question.choice1, question.choice2, question.choice3, question.choice4], id: \.self) { choice in
+                Button(action: {
+                    answerSelected(choice)
+                }) {
+                    Text(choice)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
             }
         }
     }
