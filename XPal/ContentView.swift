@@ -98,7 +98,12 @@ struct MainView: View {
             Tab("Languages", systemImage: "book.circle.fill") {
                 LanguagesList()
             }
-            
+            Tab("Search Flights", systemImage: "airplane.circle.fill") {
+                SearchFlights()
+            }
+            Tab("Search Hotels", systemImage: "building.2.fill") {
+                SearchHotels()
+            }
             Tab("Settings", systemImage: "gear") {
                 Settings()
             }
