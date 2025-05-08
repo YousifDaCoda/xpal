@@ -40,7 +40,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 90, height: 90)
                             .foregroundColor(.white)
-                            .offset(y: 0) // Bring it a bit higher than absolute bottom
+                            .offset(y: 0)
                     }
                     .padding(.bottom, 50) // Pushes the whole animation up a bit
                 }
@@ -87,7 +87,7 @@ struct MainView: View {
                 Home()
             }
             
-            Tab("Trips", systemImage: "list.bullet") {
+            Tab("Trips", systemImage: "airplane") {
                 TripsList()
             }
             
@@ -95,7 +95,7 @@ struct MainView: View {
                 Translate()
             }
             
-            Tab("Languages", systemImage: "magnifyingglass") {
+            Tab("Languages", systemImage: "book.circle.fill") {
                 LanguagesList()
             }
             

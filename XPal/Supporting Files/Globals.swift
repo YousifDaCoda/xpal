@@ -16,7 +16,7 @@ var alertMessage = ""
 //------------------------
 
 let myGoogleTranslateApiKey = "AIzaSyCNddUImoNiIkoklwirN29u972x3YG6jAU"
-
+let mySerpApiKey = "0ad0082ece4702ffeab9ab483214f6c9fa94a0e65b43916864e58d6dd56552c9"
 
 //------------------------------
 // Google Translate API HTTP Headers
